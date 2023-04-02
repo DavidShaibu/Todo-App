@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <title>Todos</title>
+</head>
+<body>
+    <header class="header">
+        <h2 class="title">Todo List</h2>
+        <input type="text" class="search" placeholder="search todos">
+    </header>
+
+    <main class="container">
+        <form class="form">
+            <ul class="ul">
+                <li class="todo" order="1">
+                    <div class="checker">
+                        <input type="checkbox" class="checkbox" id="checkbox1">
+                    </div>
+                    <div class="todo-item">Play mariokart</div>
+                    <!-- <i class="fa fa-trash-alt delete"></i> -->
+                </li>
+                <li class="todo" order="2">
+                    <div class="checker">
+                        <input type="checkbox" class="checkbox" id="checkbox2">
+                    </div>
+                    <div class="todo-item">Defeat ganon in zelda</div>
+                    <!-- <i class="fa fa-trash-alt delete"></i> -->
+                </li>
+                <li class="todo" order="3">
+                    <div class="checker">
+                        <input type="checkbox" class="checkbox" id="checkbox3">
+                    </div>
+                    <div class="todo-item">Make a veggie pie</div>
+                    <!-- <i class="fa fa-trash-alt delete"></i> -->
+                </li>
+
+            </ul>
+            <ul class="hidden"></ul>
+        </form>
+        <form class="addTodo">
+            <label for="todoText">Add new todo and press enter...</label>
+            <input type="text" id="todoText" class="todoText" placeholder="Type todo" maxlength="25">
+        </form>
+        <div class="undoDiv">
+            <button class="btn btn-main" type="button">Undo</button>
+        </div>
+    </main>
+
+
+    <script src="todos.js"></script>
+    <!-- <script src="todosv2.js"></script> -->
+</body>
+</html>
